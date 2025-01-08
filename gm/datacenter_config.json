@@ -1,0 +1,28 @@
+{
+    "GMs": {
+        "1": {
+            "address": "gm-0.gm-service.default.svc.cluster.local:5011",
+            "assigned_lms": [
+                "lm-0.lm-service.default.svc.cluster.local:5000"
+               
+            ]
+        }
+        
+    },
+    "LMs": {
+        "1": {
+            "address": "lm-0.lm-service.default.svc.cluster.local:5000",
+            "partitions": {
+                "1": {
+                    "gm_id": 1,
+                    "worker_nodes": [
+                        "worker-0.worker-service.default.svc.cluster.local:18861",
+                        "worker-1.worker-service.default.svc.cluster.local:18861"
+                    ]
+                }
+                
+            }
+        }
+        
+    }
+}
